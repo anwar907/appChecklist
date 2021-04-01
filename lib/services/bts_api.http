@@ -1,0 +1,50 @@
+
+###
+POST {{baseUrl}}/token
+Authorization: Basic {{authorization}}
+
+###
+POST {{baseUrl}}/register
+Accept: application/json
+Authorization: Bearer {{accesstToken}}
+
+###
+GET {{baseUrl}}/checklist
+Accept: application/json
+Authorization: Bearer {{accesstToken}}
+
+###
+POST {{baseUrl}}/checklist
+Accept: application/json
+Authorization: Bearer {{accesstToken}}
+
+###
+DELETE {{baseUrl}}/checklist/{checklistId}
+Accept: application/json
+Authorization: Bearer {{accesstToken}}
+
+###
+POST {{baseUrl}}/item
+Accept: application/json
+Authorization: Bearer {{accesstToken}}
+
+###
+GET {{baseUrl}}/item{id}
+Accept: application/json
+Authorization: Bearer {{accesstToken}}
+
+###
+
+PUT {{baseUrl}}/item{id}
+Accept: application/json
+Authorization: Bearer {{accesstToken}}
+
+###
+DELETE {{baseUrl}}/item{id}
+Accept: application/json
+Authorization: Bearer {{accesstToken}}
+
+###
+PUT {{baseUrl}}/item/rename/{id}
+Accept: application/json
+Authorization: Bearer {{accesstToken}}
